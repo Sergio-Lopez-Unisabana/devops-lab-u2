@@ -64,19 +64,19 @@ pipeline {
 
     post {
         success {
-            echo "✅ Pipeline completado. Imagen publicada: ${env.IMAGE_FULL} y ${env.IMAGE_LATEST}"
+            echo "Pipeline completado. Imagen publicada: ${env.IMAGE_FULL} y ${env.IMAGE_LATEST}"
         }
         failure {
-            echo "❌ Pipeline falló en el build #${env.BUILD_NUMBER}. Revisa los logs de las stages."
+            echo "Pipeline falló en el build #${env.BUILD_NUMBER}. Revisa los logs de las stages."
         }
         unstable {
-            echo "⚠️ Pipeline inestable en el build #${env.BUILD_NUMBER}."
+            echo "Pipeline inestable en el build #${env.BUILD_NUMBER}."
         }
         aborted {
-            echo "🚫 Pipeline cancelado en el build #${env.BUILD_NUMBER}."
+            echo "Pipeline cancelado en el build #${env.BUILD_NUMBER}."
         }
         always {
-            echo "🧹 Limpiando imágenes locales y recursos temporales..."
+            echo "Limpiando imágenes locales y recursos temporales..."
             sh """
                 docker rmi -f "${env.IMAGE_FULL}" 2>/dev/null || true
                 docker rmi -f "${env.IMAGE_LATEST}" 2>/dev/null || true
