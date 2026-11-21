@@ -1,0 +1,38 @@
+# Dependencias (se reinstalan dentro de la imagen con npm ci)
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Entorno y secretos
+.env
+.env.*
+*.pem
+
+# Control de versiones y CI
+.git
+.gitignore
+.github
+
+# Pruebas y cobertura (no se necesitan en producción)
+tests
+coverage
+.nyc_output
+jest.config.*
+
+# Documentación y metadatos
+README.md
+LICENSE
+*.md
+
+# Jenkins y Docker
+Jenkinsfile
+Dockerfile
+.dockerignore
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.swp

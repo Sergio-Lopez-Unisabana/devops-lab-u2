@@ -1,0 +1,30 @@
+{
+  "name": "ci-cd-lab",
+  "version": "1.0.0",
+  "description": "Laboratorio técnico para evaluar flujos de CI/CD con Node.js, Express, Jest, Docker, GitHub Actions y Jenkins",
+  "main": "server.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "jest --detectOpenHandles --forceExit"
+  },
+  "dependencies": {
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "supertest": "7.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}
