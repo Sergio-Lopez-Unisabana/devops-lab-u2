@@ -451,5 +451,3 @@ El `Dockerfile` basado en `node:18-alpine` fija la versión del runtime, instala
 - Especificación de anotaciones de imágenes OCI. https://github.com/opencontainers/image-spec
 
 ---
-
-> **Nota sobre las rutas de las imágenes:** los archivos de evidencia existen en el repositorio como `docs/images/01_github_actions_run.PNG` y `docs/images/02_jest_tests_detail.PNG` (extensión en mayúsculas). El documento usa esa grafía exacta para que las imágenes se rendericen correctamente al exportar a PDF desde GitHub o desde un visor Markdown.
